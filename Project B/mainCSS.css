@@ -1,0 +1,845 @@
+*{
+  padding: 0%;
+  margin: 0%;  
+  box-sizing: border-box;
+}
+.mainBackground{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.loginBackground{
+    background-color: #ffffff;
+    height: 30vh;
+    width: 35lh;
+    max-width: 50lh;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+}
+
+/*Login page Responsive Start*/
+@media only screen and (max-width:600px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginBackground{
+        background-color: #ffffff;
+        height: 35vh;
+        width: 15lh;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .textbox{
+        border: none;
+        padding: 12px;
+        width: 10%;
+        border-radius: 3px;
+        appearance: none;
+        background: #a1a1a1;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        outline: none;
+    }
+    
+    .textbox::placeholder{
+        color: #222;
+        transition: color 0.3s ease;
+        font-size: 12px;
+    }
+    .textbox:focus::placeholder{
+        color: transparent;
+    }
+    .usernameLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+    }
+    .usernameLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .passwordLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .passwordLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    } 
+    .registerLogin{
+        position: absolute;
+        left: 80%;
+        font-size: 15px;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        bottom: 10%;
+    }
+    .textBtn , .textBtn2{
+        font-size: 13px;
+    }
+    .textBtn{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 13px;
+        width: 130%;
+    }
+    .textBtn2{
+        position: relative;
+        left: 50%;
+
+    }
+}
+@media only screen and (min-width:600px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginBackground{
+        background-color: #ffffff;
+        height: 30vh;
+        width: 20lh;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .textbox{
+        border: none;
+        padding: 12px;
+        width: 20%;
+        border-radius: 3px;
+        appearance: none;
+        background: #a1a1a1;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        outline: none;
+    }
+    
+    .textbox::placeholder{
+        color: #222;
+        transition: color 0.3s ease;
+        font-size: 12px;
+    }
+    .textbox:focus::placeholder{
+        color: transparent;
+    }
+    .usernameLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+    }
+    .usernameLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    
+    .passwordLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .passwordLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .registerLogin{
+        position: absolute;
+        left: 80%;
+        font-size: 15px;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        bottom: 11%;
+    }
+    .textBtn , .textBtn2{
+        font-size: 15px;
+    }
+    .textBtn2{
+        position: relative;
+        left: 70%;
+    }
+    .textBtn{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 230%;
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginBackground{
+        background-color: #ffffff;
+        height: 30vh;
+        width: 25lh;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .textbox{
+        border: none;
+        padding: 12px;
+        width: 20%;
+        border-radius: 3px;
+        appearance: none;
+        background: #a1a1a1;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        outline: none;
+    }
+    
+    .textbox::placeholder{
+        color: #222;
+        transition: color 0.3s ease;
+        font-size: 15px;
+    }
+    .textbox:focus::placeholder{
+        color: transparent;
+    }
+    .usernameLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+    }
+    .usernameLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    
+    .passwordLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .passwordLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    .registerLogin{
+        position: absolute;
+        left: 70%;
+        font-size: 15px;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        bottom: 11%;
+    }
+    .textBtn , .textBtn2{
+        font-size: 17px;
+    }
+    .textBtn2{
+        position: relative;
+        left: 80%;
+    }
+    .textBtn{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 230%;
+    }
+    
+}
+@media only screen and (min-width:992px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginBackground{
+        background-color: #ffffff;
+        height: 30vh;
+        width: 30lh;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .textbox{
+        border: none;
+        padding: 12px;
+        width: 30%;
+        border-radius: 3px;
+        appearance: none;
+        background: #a1a1a1;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        outline: none;
+    }
+    
+    .textbox::placeholder{
+        color: #222;
+        transition: color 0.3s ease;
+        font-size: 22px;
+    }
+    .textbox:focus::placeholder{
+        color: transparent;
+    }
+    .usernameLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+    }
+    .usernameLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    
+    .passwordLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .passwordLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    .registerLogin{
+        position: absolute;
+        left: 70%;
+        font-size: 15px;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        bottom: 11%;
+    }
+    .textBtn , .textBtn2{
+        font-size: 22px;
+    }
+    .textBtn{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 280%;
+    }
+    .textBtn2{
+        position: relative;
+        left: 70%;
+    }
+    
+}
+@media only screen and (min-width:1200px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginBackground{
+        background-color: #ffffff;
+        height: 30vh;
+        width: 30lh;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .textbox{
+        border: none;
+        padding: 12px;
+        width: 30%;
+        border-radius: 3px;
+        appearance: none;
+        background: #a1a1a1;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-progress-appearance: none;
+        outline: none;
+    }
+    
+    .textbox::placeholder{
+        color: #222;
+        transition: color 0.3s ease;
+        font-size: 22px;
+    }
+    .textbox:focus::placeholder{
+        color: transparent;
+    }
+    .usernameLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    
+    }
+    .usernameLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    
+    .passwordLogin{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .passwordLogin input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    
+    .registerLogin{
+        position: absolute;
+        left: 70%;
+        font-size: 15px;
+    }
+    .login{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 12px;
+        bottom: 11%;
+    }
+    .textBtn , .textBtn2{
+        font-size: 22px;
+    }
+    .textBtn{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 280%;
+    }
+    .textBtn2{
+        position: relative;
+        left: 70%;
+    }
+    
+}
+/*Login page Responsive End*/
+
+/*Login Page CSS Start*/
+.usernameLogin{
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+}
+.usernameLogin input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.passwordLogin{
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.passwordLogin input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.registerLogin{
+    position: absolute;
+    left: 61%;
+}
+.login{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15%;
+}
+/*Login Page CSS End*/
+
+/*Registration page Responsive Start*/
+@media only screen and (max-width:600px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    /*Register Page CSS Start*/
+    .registerBackground{
+        background-color: aqua;
+        height: 100%;
+        width: 100%;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .registerBackground p{
+        text-align: center;
+    }
+    .registerBackground img{
+        position: relative;
+        top: 8%;
+        left: 5%;
+        height: auto;
+        width: 40px;
+    }
+    .registerHeader{
+        font-size: 48px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 30%;
+        padding-bottom: 4%;
+    }
+    .usernameRegister{
+        position: relative;
+        padding-top:5%;
+        padding-bottom: 3%;
+    }
+    .usernameRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .emailRegister{
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+    .emailRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .passwordRegister{
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+    .passwordRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .registerRegister{
+        position: relative;
+        top: 10%;
+    }
+    .registerRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    /*Register Page CSS End*/
+}
+@media only screen and (min-width:600px){
+    .mainBackground{
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+    }
+    /*Register Page CSS Start*/
+    .registerBackground{
+        background-color: aqua;
+        height: 100%;
+        width: 100%;
+        max-width: 50lh;
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid red;
+    }
+    .registerBackground p{
+        text-align: center;
+    }
+    .registerBackground img{
+        position: relative;
+        top: 8%;
+        left: 5%;
+        height: auto;
+        width: 40px;
+    }
+    .registerHeader{
+        font-size: 48px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 10%;
+        padding-bottom: 4%;
+    }
+    .usernameRegister{
+        position: relative;
+        padding-top:5%;
+        padding-bottom: 3%;
+    }
+    .usernameRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .emailRegister{
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+    .emailRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .passwordRegister{
+        position: relative;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+    .passwordRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    .registerRegister{
+        position: relative;
+        top: 10%;
+    }
+    .registerRegister input{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70%;
+    }
+    /*Register Page CSS End*/
+}
+/*Login page Responsive End*/
+
+/*Register Page CSS Start
+.registerBackground{
+    background-color: aqua;
+    height: 100vh;
+    width: 35lh;
+    max-width: 50lh;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid red;
+}
+.registerBackground p{
+    text-align: center;
+}
+.registerBackground img{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: auto;
+    width: 40px;
+}
+.registerHeader{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 17%;
+    padding-bottom: 4%;
+}
+.usernameRegister{
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.usernameRegister input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.emailRegister{
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.emailRegister input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.passwordRegister{
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.passwordRegister input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.registerRegister{
+    position: relative;
+    top: 5%;
+}
+.registerRegister input{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+Register Page CSS End*/
+
+/*Home Page CSS Start*/
+
+.homeBackground{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.taskBar{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    background-color: #645252;
+}
+.taskBar div{
+    background-color: antiquewhite;
+
+}
+.home{
+    margin-left: 27%;
+}
+.automation{
+    margin-left: 17%;
+    margin-right: 17%;
+}
+.database{
+    margin-right: 17%;
+}
+
+
+/* Btn CSS */
+.btn, .textBtn {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.btn:hover,
+.btn:focus,.textBtn:hover,.textBtn:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+.btn:active,.textBtn:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+.btn:disabled,.textBtn:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+.textBtn2 {
+    text-decoration: none;
+    color: #2a69bb;
+}
+
+/* TextBox*/
+.textbox{
+    border: none;
+    padding: 12px;
+    width: 250px;
+    border-radius: 3px;
+    appearance: none;
+    background: #a1a1a1;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    outline: none;
+}
+
+.textbox::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
+.textbox:focus::placeholder{
+    color: transparent;
+}
