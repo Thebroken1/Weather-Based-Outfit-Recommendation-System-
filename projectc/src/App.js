@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import OutfitBackGround from './modules/OutfitMods/OufitBackGround';
+import WeatherBackGround from './modules/WeatherMods/WeatherBackGround';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           hi
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >asdwasdw
-          Learn React
-        </a>
       </header>
+      <WeatherBackGround/>
+      <OutfitBackGround/>
+      
     </div>
+    
   );
 }
 

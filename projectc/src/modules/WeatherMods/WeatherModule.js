@@ -1,10 +1,10 @@
-import './App.css';
+import '../../App.css';
 
-function weatherModule(){
+function WeatherModule(){
     return(
         <div className = "weatherMod">
             <p>Weather</p>
         </div>
-    )
+    );
 }
-export default weatherModule;
+export default WeatherModule;
