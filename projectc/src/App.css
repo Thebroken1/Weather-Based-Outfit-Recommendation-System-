@@ -1,6 +1,5 @@
 /*Weather Module*/
 .weatherMod{
-  background-color: black;
   width: 10lh;
   height: 50%;
 
@@ -11,7 +10,6 @@
   height: 50%;
 }
 .temperature{
-  background-color: aquamarine;
   width: 7lh;
   height: 50%;
 }
