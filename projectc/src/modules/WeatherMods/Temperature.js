@@ -1,12 +1,15 @@
 import '../../App.css';
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import config from '../../config.json';
+import React, { useState, useEffect } from 'react';
+
 
 function Temperature() {
     const [temperatureData, setTemperatureData] = useState(null);
     const [location, setLocation] = useState({ lat: null, long: null });
     const [error, setError] = useState(null); // Optional error state
+
+
     const API_KEY = config.openWeatherToken;
 
     // Geolocation only runs once
@@ -31,6 +34,9 @@ function Temperature() {
             fetchTemperatureData(location.lat, location.long);
         }
     }, [location]);
+
+
+    
 
     const fetchTemperatureData = async (lat, long) => {
         try {
