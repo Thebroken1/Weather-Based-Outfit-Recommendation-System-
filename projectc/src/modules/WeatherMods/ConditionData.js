@@ -4,6 +4,7 @@ import config from '../../config.json';
 import { useLocation } from './Location.js';
 
 function ConditionData() {
+    const [weatherCode, setWeatherCode] = useState(null);
     const { location, error: locationError } = useLocation(); // Get location and error from context
     const [conditionData, setConditionData] = useState('');   // Weather condition description
     const [fetchError, setFetchError] = useState(null);       // Error specific to data fetch
@@ -22,6 +23,8 @@ function ConditionData() {
             const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`
             );
+            const code = response.data.weather[0].id;
+            setWeatherCode(code);
             setConditionData(response.data.weather[0].description); // Set weather condition
         } catch (error) {
             console.error("Error fetching weather data:", error);
