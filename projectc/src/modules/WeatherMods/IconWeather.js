@@ -1,32 +1,32 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudBolt, faCloudSun, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'; // Import required icons
+import { faCloudBolt, faCloudSun, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'; 
 import React from 'react';
-import Timer from './Timer'; // Assuming you have Timer function in the same directory
-import ConditionData from './ConditionData'; // Assuming this is your data function
+import Timer from './Timer'; // Assuming Timer returns a time string
+import ConditionData from './ConditionData'; // Assuming ConditionData returns an object with weather data
 import weatherIconMap from './IconsWeatherMap';
 
 function IconWeather() {
-    const currentTime = Timer();
-    const conditionData = ConditionData();
-    const weatherCode = conditionData?.code; // Assuming conditionData contains a code attribute
-    
-    // Define the time comparisons as Date objects for better handling
-    const timeCompAM = new Date('1970-01-01T06:00:00'); // 6:00 AM
-    const timeCompPM = new Date('1970-01-01T18:00:00'); // 6:00 PM
+    const currentTime = Timer(); // Using Timer to get time as a string like "14:30:00"
+    const conditionData = ConditionData(); // Using ConditionData to get weather data with `code`
+    const weatherCode = conditionData?.code || 800; // Default to 800 (clear sky) if undefined
 
-    // Convert current time to Date object
-    const currentTimeObj = new Date('1970-01-01T' + currentTime);
+    // Define daytime boundaries as Date objects
+    const timeCompAM = new Date('1970-01-01T06:00:00');
+    const timeCompPM = new Date('1970-01-01T18:00:00');
+    const currentTimeObj = new Date(`1970-01-01T${currentTime}`);
 
-    // Determine the default icon based on time of day
+    // Check if it's daytime or nighttime
     const isDaytime = currentTimeObj >= timeCompAM && currentTimeObj < timeCompPM;
     const defaultIcon = isDaytime ? faSun : faMoon;
 
-    // Retrieve the icon from map or fallback to default
-    const displayIcon = weatherIconMap[weatherCode] || (isDaytime ? faCloudSun : faCloudBolt);
+    // Determine display icon based on time and weather code
+    const adjustedWeatherCode = isDaytime ? weatherCode : weatherCode + 1000;
+    console.log("Adjusted Weather Code:", adjustedWeatherCode); // Debugging log
+    const displayIcon = weatherIconMap[adjustedWeatherCode] || defaultIcon;
 
     return (
         <div className="iconWeather">
-            <p>{currentTime} <FontAwesomeIcon icon={displayIcon || defaultIcon} /></p>
+            <p>{currentTime} <FontAwesomeIcon icon={displayIcon} /></p>
         </div>
     );
 }
