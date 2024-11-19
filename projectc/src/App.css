@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
+/*Weather Module*/
+.weatherMod{
+  width: 10lh;
+  height: 50%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.iconWeather{
+  background-color: aqua;
+  width: 10lh;
+  height: 50%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temperature{
+  width: 7lh;
+  height: 50%;
+}
+.weatherBackGround{
+  background-color: antiquewhite;
+  width: auto;
+  height: 30vh;
+  margin-left: 15%;
+  margin-right: 5%;
+  margin-top: 5%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weatherBackGround > .box{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  align-content: center;
 }
+/*Weather Module*/
+/*Outfit Module*/
+.iconOutfit{
+  background-color: blueviolet;
+  height: 10ch;
+  width: 15lh;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.rating{
+  background-color: chartreuse;
+  height: 10vh;
+  width: 15lh;
+}
+.outfitDetails{
+  background-color: cyan;
+  height: 10vh;
+  width: 20lh;
+}
+.outfitBackGround{
+  background-color: blue;
+  width: auto;
+  height: 40vh;
+  margin-left: 15%;
+  margin-right: 5%;
+  margin-top: 5%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+}
+.outfitBackGround > .box{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
 }
