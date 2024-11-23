@@ -30,8 +30,8 @@ function IconWeather() {
 
     return (
         <div className="iconWeather">
-            <p>{currentTime} <FontAwesomeIcon icon={displayIcon} /></p>
-            <p>Condition: {weatherData.description}</p>
+            <p>{currentTime} </p>
+            <p><FontAwesomeIcon icon={displayIcon} />   </p>
         </div>
     );
 }
